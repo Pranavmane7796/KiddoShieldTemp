@@ -1,0 +1,22 @@
+#history-table{
+    margin-top: 8%;
+}
+.history-header{
+    margin-top: 5%;
+}
+
+.tbl-container-outer{
+    display: grid;
+    justify-items: center;
+    /* height: 100vh; */
+}
+
+.tbl-container-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+
+
