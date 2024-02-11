@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "../styles/Navbar.css";
 import Login from "./login";
-import Help from "./Help";
 export default function Navbar() {
-  const [open, close] = useState(false);
+  const [open, close] = useState(false); //for login pop up
   const modalHandler = () => {
     close(true);
   };
@@ -21,35 +20,11 @@ export default function Navbar() {
         />
         <ul className="nav__links">
           <li className="nav__item">
-            <a className="nav__link" href="/childHistory.js">
-              ChildHistory
+            <a className="nav__link" href="/childDashboard.js">
+              Children Details
             </a>
           </li>
-          <li className="nav__item">
-            {/* <a className="nav__link" href="#section--2">
-              Operations
-            </a> */}
-            <div className="btn-group">
-              <a
-                id="dropdown-btn"
-                className="btn  btn-sm dropdown-toggle"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Appoinment
-              </a>
-              <ul id="dropdown-menu" className="dropdown-menu">
-                <li id="vaccination" style={{ marginLeft: "5%" }}>
-                  Vaccination
-                </li>
 
-                <li id="monthlyCheckup" style={{ marginLeft: "5%" }}>
-                  Monthly checkup
-                </li>
-              </ul>
-            </div>
-          </li>
           <li className="nav__item">
             <a className="nav__link" href="#section--3">
               Help
@@ -70,6 +45,7 @@ export default function Navbar() {
           </li>
         </ul>
       </nav>
+      {/* Conditional rendering for login modal */}
       {open && <Login />}
     </>
   );

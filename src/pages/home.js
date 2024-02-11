@@ -1,5 +1,4 @@
 import "./home.css";
-
 export default function Home() {
   return (
     <>
@@ -33,7 +32,7 @@ export default function Home() {
       <section className="section" id="section--1">
         <div className="section__title">
           <h2 className="section__description">Features</h2>
-          <h3 className="section__header">Recommended Vaccines by Age</h3>
+          {/* <h6 className="section__header">Recommended Vaccines by Age</h6> */}
         </div>
 
         <div className="features">
@@ -45,6 +44,10 @@ export default function Home() {
           />
           <div className="features__feature">
             <div className="features__icon"></div>
+            <h5 className="features__header">
+              {/* <span style={{ color: "##81bc9b", fontSize: "70px" }}>❝</span> */}
+              <b> Recommended Vaccines by Age</b>
+            </h5>
             <p>
               Vaccines prevent illness, disability and ensuring children's
               health and well-being. By immunizing against contagious diseases,
@@ -62,12 +65,10 @@ export default function Home() {
           </div>
 
           <div className="features__feature">
-            <div className="features__icon">
-              {/* <svg>
-                  <use xlink:href="img/icons.svg#icon-trending-up"></use>
-                </svg> */}
-            </div>
-            <h5 className="features__header">Watch your money grow</h5>
+            <div className="features__icon"></div>
+            <h5 className="features__header">
+              <b>Watch your money grow</b>
+            </h5>
             <p>
               Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
               inventore ab? Nulla incidunt eius numquam sequi iste pariatur
@@ -75,25 +76,23 @@ export default function Home() {
             </p>
           </div>
           <img
-            src="img/grow-lazy.jpg"
+            src="images/img1"
             data-src="img/grow.jpg"
             alt="Plant"
             className="features__img lazy-img"
           />
 
           <img
-            src="img/card-lazy.jpg"
-            data-src="img/card.jpg"
+            src="images/diseaseimg.jpg"
+            data-src="images/diseaseimg.jpg"
             alt="Credit card"
             className="features__img lazy-img"
           />
           <div className="features__feature">
-            <div className="features__icon">
-              {/* <svg>
-                  <use xlink:href="img/icons.svg#icon-credit-card"></use>
-                </svg> */}
-            </div>
-            <h5 className="features__header">Free debit card included</h5>
+            <div className="features__icon"></div>
+            <h5 className="features__header">
+              <b>Free debit card included</b>
+            </h5>
             <p>
               Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
               eveniet consequatur odit quam quos possimus assumenda dicta fuga
@@ -210,9 +209,12 @@ export default function Home() {
             <div className="carousel-item active">
               <img
                 className="d-block w-100"
-                src="images/injection.png"
+                src="images/immunization.jpg"
                 alt="First slide"
-                style={{ maxHeight: "500px", objectFit: "contain" }}
+                style={{
+                  maxHeight: "500px",
+                  objectFit: "contain",
+                }}
               />
             </div>
             <div className="carousel-item">

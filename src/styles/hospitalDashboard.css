@@ -1,0 +1,17 @@
+#hospital-dashboard{
+    width: 500px;
+    height: 80%;
+    background-color:#eaf2f0;
+}
+
+
+#container-dashboard{
+    margin-top: 5%;
+    margin-left: 11%;
+    display: flex;
+}
+
+
+div > div >p{
+    font-size: 15px;
+}

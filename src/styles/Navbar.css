@@ -46,12 +46,15 @@
     font-size: 180%;
     border: none;
   }
-  #dropdown-menu{
-    width: 150%;
-    font-size: medium;
-    background-color: rgb(240, 240, 240) ;
+ 
+/* navbar links  */
+  li:hover{
+    color: black;
+  }
 
+  .appointment-link{
+    text-decoration: none  !important;
+    color: rgb(71, 67, 67);
   }
-  #dropdown-menu:hover{
-    cursor: pointer;
-  }
+
+ 

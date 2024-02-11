@@ -1,25 +1,21 @@
 import "./App.css";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/login";
 import Registration from "./pages/registration";
 import Home from "./pages/home";
 import Navbar from "./pages/navbar";
 import Footer from "./component/Footer";
-import Help from "./pages/Help";
-import { useState } from "react";
 import NavbarReg from "./pages/navbarForReg";
 import VaccineByAge from "./pages/vaccinesByAge";
 import ChildHistory from "./pages/child/childHistory";
-import ScheduleVaccination from "./pages/child/scheduleVaccination";
+import ScheduleVaccination from "./pages/child/scheduleVaccine";
 import ChildRegistration from "./pages/child/childRegistration";
+import MonthlyCheckUp from "./pages/child/monthlyCheckUp";
+import ChildDashboard from "./pages/childDashboard";
+import HosspitalDashboard from "./pages/hospital/hospitalDashboard";
 
 function App() {
   return (
     <>
-      {/* <Navbar></Navbar>
-      <Home></Home>
-      <Footer></Footer> */}
       <BrowserRouter>
         <Routes>
           <Route
@@ -57,6 +53,16 @@ function App() {
           <Route
             path="/childRegistration.js"
             element={<ChildRegistration />}
+          ></Route>
+          <Route path="/monthlyCheckUp.js" element={<MonthlyCheckUp />}></Route>
+          <Route path="/childDashboard.js" element={<ChildDashboard />}></Route>
+          <Route
+            path="/hospitalDashboard.js"
+            element={
+              <>
+                <HosspitalDashboard />
+              </>
+            }
           ></Route>
         </Routes>
       </BrowserRouter>

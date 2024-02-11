@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/login.css";
 export default function login() {
   return (
     <>
@@ -14,11 +13,7 @@ export default function login() {
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h4
-                className="modal-title"
-                // id="exampleModalLongTitle"
-                style={{ marginLeft: "35%" }}
-              >
+              <h4 className="modal-title" style={{ marginLeft: "35%" }}>
                 <b> KiddoShield</b>
               </h4>
               <button
@@ -31,7 +26,7 @@ export default function login() {
               </button>
             </div>
             <div className="modal-body">
-              <form>
+              <form className="login-user">
                 <div className="form-outline mb-4 w-50">
                   <input
                     type="email"
@@ -107,7 +102,7 @@ export default function login() {
                 </div>
 
                 <button
-                  type="button"
+                  type="submit"
                   className="btn btn-outline-primary btn-block mb-4 rounded-pill w-25"
                   style={{ marginLeft: "37%" }}
                 >
